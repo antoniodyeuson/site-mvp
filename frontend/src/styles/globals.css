@@ -6,3 +6,14 @@ body {
     background-color: #f9f9f9;
   }
   
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  

@@ -1,7 +1,21 @@
 {
-    "welcome": "Bem-vindo à nossa plataforma!",
-    "products": "Produtos",
-    "affiliates": "Afiliados",
-    "login": "Entrar"
-  }
-  
+  "welcome": "Bem-vindo à nossa plataforma!",
+  "products": "Produtos",
+  "affiliates": "Afiliados",
+  "inicio": "Início",
+  "economize": "Poupe",
+  "recursos": "Funcionalidades",
+  "demonstrativo": "Demonstração",
+  "blog": "Blog",
+  "central_de_ajuda": "Central de Apoio",
+  "faq": "Perguntas Frequentes",
+  "login": "Iniciar Sessão",
+  "cadastro": "Registar-se",
+  "email": "E-mail",
+  "senha": "Palavra-passe",
+  "entrar": "Entrar",
+  "fechar": "Fechar",
+  "escolha_seu_perfil": "Escolha o seu perfil",
+  "produtor": "Criador de Conteúdo",
+  "afiliado": "Afiliado"
+}

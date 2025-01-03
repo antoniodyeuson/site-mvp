@@ -1,7 +1,21 @@
 {
-    "welcome": "Welcome to our platform!",
-    "products": "Products",
-    "affiliates": "Affiliates",
-    "login": "Login"
-  }
-  
+  "welcome": "Welcome to our platform!",
+  "products": "Products",
+  "affiliates": "Affiliates",
+  "login": "Login",
+  "inicio": "Home",
+  "economize": "Save",
+  "recursos": "Resources",
+  "demonstrativo": "Demonstrative",
+  "blog": "Blog",
+  "central_de_ajuda": "Help Center",
+  "faq": "FAQ",
+  "cadastro": "Sign Up",
+  "email": "Email",
+  "senha": "Password",
+  "entrar": "Sign In",
+  "fechar": "Close",
+  "escolha_seu_perfil": "Choose your profile",
+  "produtor": "Producer",
+  "afiliado": "Affiliate"
+}

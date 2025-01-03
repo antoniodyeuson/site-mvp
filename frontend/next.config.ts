@@ -1,9 +1,10 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   i18n: {
     locales: ['en', 'pt', 'es'], // Idiomas disponíveis
     defaultLocale: 'pt', // Idioma padrão
-    localeDetection: true, // Detecta automaticamente o idioma
+    localeDetection: false, // Define como booleano (true ou false)
   },
 };
 
-export default nextConfig; // Use apenas o export default
+export default nextConfig;
