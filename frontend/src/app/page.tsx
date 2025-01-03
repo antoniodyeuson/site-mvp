@@ -2,99 +2,77 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div>
+      {/* Cabeçalho */}
+      <header className="bg-navy text-white py-6 text-center">
+        <h1 className="text-3xl font-bold">Bem-vindo ao Site de Vendas!</h1>
+      </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Seção de Copy Inicial */}
+      <section className="flex flex-col sm:flex-row items-center justify-between px-8 py-16 bg-white text-navy">
+        <div className="max-w-lg">
+          <h2 className="text-2xl font-bold mb-4">
+            Venda seus produtos digitais na Europa!
+          </h2>
+          <p className="text-lg">
+            Ganhe em euro e alcance consumidores em todo o mercado europeu.
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+        <Image
+          src="/hero-image.png"
+          alt="Imagem de Chamada para Ação"
+          width={500}
+          height={300}
+        />
+      </section>
+
+      {/* Seção de Economia */}
+      <section className="bg-lightblue py-16 text-center">
+        <h2 className="text-2xl font-bold mb-6">Economize com nossas taxas</h2>
+        <p className="text-lg">
+          Compare as taxas da nossa plataforma com as dos concorrentes e veja
+          quanto você pode economizar!
+        </p>
+      </section>
+
+      {/* Seção de Recursos */}
+      <section className="py-16 px-8 bg-white">
+        <h2 className="text-2xl font-bold text-center mb-6">
+          Descubra as Funcionalidades
+        </h2>
+        <ul className="flex flex-col sm:flex-row justify-around text-center">
+          <li className="mb-6">
+            <h3 className="font-bold">Dashboard Intuitiva</h3>
+            <p>Gerencie vendas e afiliados facilmente.</p>
+          </li>
+          <li className="mb-6">
+            <h3 className="font-bold">Pagamentos Rápidos</h3>
+            <p>Receba em euro diretamente na sua conta.</p>
+          </li>
+          <li className="mb-6">
+            <h3 className="font-bold">Marketing Integrado</h3>
+            <p>Aumente suas vendas com ferramentas poderosas.</p>
+          </li>
+        </ul>
+      </section>
+
+      {/* FAQ */}
+      <section className="bg-lightblue py-16 px-8 text-center">
+        <h2 className="text-2xl font-bold mb-6">Perguntas Frequentes</h2>
+        <div className="text-left max-w-4xl mx-auto">
+          <h3 className="font-bold">Como faço para me cadastrar?</h3>
+          <p className="mb-4">Clique em &quot;Cadastro&quot; no menu para começar.</p>
+          <h3 className="font-bold">Quais as vantagens para afiliados?</h3>
+          <p className="mb-4">Ganhos em euro e suporte total para vendas.</p>
+          <h3 className="font-bold">Posso ser produtor e afiliado?</h3>
+          <p>Sim! Basta configurar sua conta para ambos os perfis.</p>
+        </div>
+      </section>
+
+      {/* Rodapé */}
+      <footer className="bg-navy text-white py-6 text-center">
+        <p>© 2025 Nome da Empresa - CNPJ: 00.000.000/0001-00</p>
+        <p>Todos os direitos reservados.</p>
       </footer>
     </div>
   );
